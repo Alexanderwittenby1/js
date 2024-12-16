@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <title>testverktyg</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="index.html">Me</a></li>
+        <li><a href="redovisning.html">Redovisning</a></li>
+        <li><a href="om.html">Om</a></li>
+        <li><a href="kmom02.html">Kmom02</a></li>
+        <li><a href="kmom03.html">Kmom03</a></li>
+        <li><a href="kmom04.html">Kmom04</a></li>
+        <li><a href="kmom05.html">Kmom05</a></li>
+        <li><a href="kmom06.html">Kmom06</a></li>
+        <li><a href="kmom10.html" class="active">Kmom10</a></li>
+      </ul>
+    </header>
+    <main>
+      <div id="start-container">
+        <h1>Welcome to the iq-test!</h1>
+        <p>
+          In the following test you will be granted some questions to answer.
+        </p>
+        <p>Click on the link below to start the test.</p>
+        <button id="start-test">Start the test</button>
+      </div>
+
+      <div id="question-container" style="display: none">
+        <h1>Knowledge test</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="start-fizz-buzz" style="display: none">Continue</button>
+      </div>
+
+      <div id="result-container" style="display: none">
+        <!-- <h2>Result:</h2>
+            <p>You got <span id="score">0</span> points!</p> -->
+        <!-- <a href="#" onclick="nextQuestion()">Continue</a> -->
+      </div>
+
+      <div id="fizzbuzz" style="display: none"></div>
+
+      <div id="fizzbuzz-container" style="display: none">
+        <h1>FizzBuzz</h1>
+        <h2>How it works:</h2>
+        <p>
+          Players generally sit in a circle. The player designated to go first
+          says the number "one", and the players then count upwards in turn.
+          However, any number divisible by three is replaced by the word fizz
+          and any number divisible by five by the word buzz. Numbers divisible
+          by both three and five (i.e. divisible by fifteen) become fizz buzz. A
+          player who hesitates or makes a mistake is eliminated
+        </p>
+
+        <div id="fizzbuzz-inner">
+            <h3>Click on the correct number that completes the sequence:</h3>
+          <div id="sequence"></div>
+          <div id="buttons"></div>
+        </div>
+
+        <button id="start-memory">Continue</button>
+      </div>
+
+      <div id="memory-test" style="display: none">
+        <h1>Minnestest</h1>
+        <p>
+          In this test you will be presented 9 images for 5 seconds which you
+          will have to memorize. After 5 seconds the images will dissapear. You
+          job is to find the following cards.
+        </p>
+        <h2 id="question-text"></h2>
+        <div id="imageContainer"></div>
+        <div id="guessContainer"></div>
+        <div id="result"></div>
+
+        <button style="display: none" id="show-score">Show score</button>
+      </div>
+
+      <div id="complete-container" style="display: none">
+        <div
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <h2>Your score:</h2>
+          <h2 id="score"></h2>
+        </div>
+        <p id="score-message"></p>
+      </div>
+    </main>
+
+    <!-- <script type="module" src="js/modules/kmom10/modules.js"></script> -->
+    <script type="module" src="js/kmom10.js"></script>
+  </body>
+</html>
